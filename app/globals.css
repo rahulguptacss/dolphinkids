@@ -1,26 +1,169 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: hsl(226 52% 21%);
+  --body: hsl(226 22% 31%);
+  --paper: hsl(30 38% 97.5%);
+  --brand: hsl(332 54% 37%);
+  --brand-strong: hsl(332 58% 30%);
+  --brand-tint: hsl(336 48% 95%);
+  --gilt: hsl(20 72% 50%);
+  --gilt-ink: hsl(18 62% 36%);
+  --deep: hsl(220 48% 95%);
+  --deep-2: hsl(34 62% 94.5%);
+  --sage: hsl(140 24% 93.5%);
+  --ivory: hsl(30 42% 98.5%);
+  --ondeep: hsl(226 52% 21%);
+  --ondeep-soft: hsl(226 20% 34%);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: var(--ink);
+  --color-body: var(--body);
+  --color-paper: var(--paper);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-tint: var(--brand-tint);
+  --color-gilt: var(--gilt);
+  --color-gilt-ink: var(--gilt-ink);
+  --color-deep: var(--deep);
+  --color-deep-2: var(--deep-2);
+  --color-sage: var(--sage);
+  --color-ivory: var(--ivory);
+  --color-ondeep: var(--ondeep);
+  --color-ondeep-soft: var(--ondeep-soft);
+  --font-sans: var(--font-jakarta);
+  --font-display: var(--font-fraunces);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.015em;
+}
+
+.font-display em,
+h1 em,
+.italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.45rem;
+  height: 2px;
+  border-radius: 2px;
+  background: hsl(20 72% 50%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.nav-link:hover::after,
+.nav-link.is-open::after {
+  transform: scaleX(1);
+}
+
+.eyebrow {
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.hero-shell {
+  background: linear-gradient(180deg, hsl(30 45% 98%) 0%, hsl(336 45% 97%) 55%, hsl(220 45% 97%) 100%);
+}
+
+.hero-wave {
+  width: 7.25rem;
+  height: 12px;
+  margin-top: 0.7rem;
+  background: radial-gradient(circle at 12px 0, transparent 7px, hsl(20 72% 50%) 8px, transparent 10px) left center / 22px 12px repeat-x;
+}
+
+.wave-rule {
+  height: 10px;
+  background: radial-gradient(circle at 10px -4px, transparent 9px, hsl(20 72% 50%) 10px, transparent 11px) 0 0 / 20px 10px repeat-x;
+}
+
+.deep-wash {
+  background-color: var(--deep);
+  background-image: radial-gradient(120% 80% at 100% 0%, hsl(332 50% 94% / 0.8), transparent 60%);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+.btn-lift {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-lift:hover {
+  transform: translateY(-1px);
+}
+
+.btn-lift:active {
+  transform: translateY(0);
+}
+
+.why-card h3 {
+  transition: color 0.2s ease;
+}
+
+.why-card:hover h3 {
+  color: var(--brand);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .btn-lift:hover { transform: none; }
+}
+
+.field {
+  min-height: 48px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(28, 39, 72, 0.14);
+  background: #fff;
+  padding: 0 14px;
+  color: var(--ink);
 }

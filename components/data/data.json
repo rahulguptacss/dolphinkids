@@ -1,0 +1,758 @@
+{
+  "common": {
+    "Header": {
+      "banner": "ADMISSIONS OPEN | GREATER NOIDA",
+      "banner_href": "#admissions",
+      "logo": "/media/dolphin-kids-logo.png",
+      "logo_alt": "Dolphin Kids - Come Grow With Us",
+      "utility": [
+        { "name": "About Us", "href": "#about" },
+        { "name": "Contact Us", "href": "#contact" },
+        { "name": "Senior School Tie-ups", "href": "#senior" },
+        { "name": "Parenting Journal", "href": "#journal" }
+      ],
+      "login_text": "Parent Login",
+      "phone": "98110 29884",
+      "phone_href": "tel:+919811029884",
+      "button_text": "Admission Enquiry",
+      "button_href": "#enquire",
+      "promo_text": "Discover the Franchise Opportunity",
+      "admission_brochure": "#enquire",
+      "admission_brochure_text": "Admission Brochure",
+      "franchise_brochure": "#franchise",
+      "franchise_brochure_text": "Franchise Brochure",
+      "nav": [
+        { "name": "Home", "href": "#home", "blurb": "Back to the beginning.", "items": [] },
+        {
+          "name": "Admissions",
+          "href": "#admissions",
+          "blurb": "Admissions open, Preschool to Grade 2.",
+          "items": [
+            { "name": "Preschool", "href": "#admissions" },
+            { "name": "Nursery PP1", "href": "#admissions" },
+            { "name": "LKG PP2", "href": "#admissions" },
+            { "name": "UKG PP3", "href": "#admissions" },
+            { "name": "Grade 1", "href": "#admissions" },
+            { "name": "Grade 2", "href": "#admissions" },
+            { "name": "Age Eligibility", "href": "#admissions" },
+            { "name": "Admission Process", "href": "#process" },
+            { "name": "Fees, Hours & Transport", "href": "#process" },
+            { "name": "Book a Campus Visit", "href": "#enquire" }
+          ]
+        },
+        {
+          "name": "Day Care",
+          "href": "#daycare",
+          "blurb": "More than Day Care. A second home for learning, growth and care.",
+          "items": [
+            { "name": "Premium Day Care", "href": "#daycare" },
+            { "name": "Day Care for Other School Children", "href": "#daycare" },
+            { "name": "Activities and Learning", "href": "#learning" },
+            { "name": "Extended Day Care", "href": "#daycare" },
+            { "name": "Safety, Care and Infrastructure", "href": "#campus" },
+            { "name": "Day Care Enquiry", "href": "#enquire" }
+          ]
+        },
+        {
+          "name": "Why Dolphin Kids",
+          "href": "#why",
+          "blurb": "What parents tell us matters most.",
+          "items": [
+            { "name": "About Us", "href": "#about" },
+            { "name": "Senior School Tie-ups", "href": "#senior" },
+            { "name": "Qualified and Experienced Teachers", "href": "#why" },
+            { "name": "Teacher-Child Ratio", "note": "Teacher-child ratios will be published only once confirmed by the school. Please ask our admissions team for current class arrangements." },
+            { "name": "Language and Speech Development", "href": "#why" },
+            { "name": "Behavioural Management", "href": "#why" },
+            { "name": "PSED", "href": "#why" },
+            { "name": "Caring and Supportive Staff", "href": "#why" },
+            { "name": "Infrastructure", "href": "#campus" },
+            { "name": "Child Safety", "href": "#why" },
+            { "name": "Transportation", "note": "Bus services across Greater Noida sectors are route-dependent. Route details will be published once confirmed; ask our team about your sector." },
+            { "name": "Parent Testimonials", "href": "#parents" }
+          ]
+        },
+        {
+          "name": "Learning",
+          "href": "#learning",
+          "blurb": "A connected world of learning, discovery and expression.",
+          "items": [
+            { "name": "International Curriculum", "href": "#learning" },
+            { "name": "Jolly Phonics", "href": "#learning" },
+            { "name": "Jolly Grammar", "href": "#learning" },
+            { "name": "Grammar Starter", "href": "#learning" },
+            { "name": "Fitzroy Readers", "href": "#learning" },
+            { "name": "Montessori Learning", "href": "#learning" },
+            { "name": "STEAM Education", "href": "#learning" },
+            { "name": "Language Labs", "href": "#learning" },
+            { "name": "Science Labs", "href": "#learning" },
+            { "name": "EVS Labs", "href": "#learning" },
+            { "name": "Maths Labs", "href": "#learning" },
+            { "name": "KinderGym", "href": "#learning" },
+            { "name": "KinderMusic", "href": "#learning" },
+            { "name": "Financial Literacy", "href": "#learning" },
+            { "name": "PSED", "href": "#learning" },
+            { "name": "Enquiry-Based Learning", "href": "#learning" },
+            { "name": "Dance, Music and Theatre", "href": "#learning" }
+          ]
+        },
+        {
+          "name": "Campus",
+          "href": "#campus",
+          "blurb": "One campus. A world of learning experiences.",
+          "items": [
+            { "name": "Virtual School Tour", "href": "#campus" },
+            { "name": "Infrastructure", "href": "#campus" },
+            { "name": "Indoor Play Zones", "href": "#campus" },
+            { "name": "Outdoor Play Zones", "href": "#campus" },
+            { "name": "Laboratories", "href": "#campus" },
+            { "name": "Sports Facilities", "href": "#campus" },
+            { "name": "Activity Centres", "href": "#learning" },
+            { "name": "Gallery", "href": "#campus" },
+            { "name": "Videos", "href": "#campus" },
+            { "name": "School Events", "note": "School events and celebrations will have their own detailed page in the next phase. For now, our admissions team can answer any question directly." }
+          ]
+        },
+        {
+          "name": "Franchise",
+          "href": "#franchise",
+          "blurb": "A separate journey for partners across India.",
+          "items": [
+            { "name": "Why Dolphin Franchise?", "href": "#franchise" },
+            { "name": "Corporate Day Care", "href": "#franchise" },
+            { "name": "Studio and Home Schools", "href": "#franchise" },
+            { "name": "Dolphin Kids Junior", "href": "#franchise" },
+            { "name": "Dolphin Kids Elementary", "href": "#franchise" },
+            { "name": "Middle School", "href": "#franchise" },
+            { "name": "Dolphin International School K-12", "href": "#franchise" },
+            { "name": "Premium & Expandable Schools", "href": "#franchise" },
+            { "name": "Royalty & Agreement Terms", "href": "#franchise" },
+            { "name": "Franchise Partner Support", "href": "#franchise" },
+            { "name": "Senior School Tie-ups", "href": "#senior" },
+            { "name": "Franchise Enquiry", "href": "#enquire" }
+          ]
+        },
+        {
+          "name": "Journal",
+          "href": "#journal",
+          "blurb": "The Parenting Journal. Growing together, learning together.",
+          "items": [
+            { "name": "Latest Articles", "href": "#journal" },
+            { "name": "Parenting Categories", "href": "#journal" },
+            { "name": "Age-Wise Guides", "href": "#journal" },
+            { "name": "Free Resources", "href": "#journal" },
+            { "name": "Parenting Workshops", "href": "#journal" },
+            { "name": "Subscribe", "href": "#enquire" }
+          ]
+        }
+      ]
+    },
+    "Footer": {
+      "logo": "/media/dolphin-kids-logo.png",
+      "logo_alt": "Dolphin Kids",
+      "tagline": "Bringing global education to India.",
+      "address": "Plot No. NS-16, Gamma-1, Greater Noida, Uttar Pradesh, India",
+      "contact_title": "Contact",
+      "phone_label": "Admissions",
+      "phone": "98110 29884",
+      "phone_href": "tel:+919811029884",
+      "whatsapp_label": "WhatsApp",
+      "whatsapp": "93105 89888",
+      "whatsapp_href": "https://wa.me/919310589888",
+      "explore_title": "Explore",
+      "links": [
+        { "name": "Home", "href": "#home" },
+        { "name": "Admissions", "href": "#admissions" },
+        { "name": "Day Care", "href": "#daycare" },
+        { "name": "Why Dolphin Kids", "href": "#why" },
+        { "name": "Learning", "href": "#learning" },
+        { "name": "Campus", "href": "#campus" },
+        { "name": "Franchise", "href": "#franchise" },
+        { "name": "Journal", "href": "#journal" },
+        { "name": "About Us", "href": "#about" },
+        { "name": "Admission Process", "href": "#process" },
+        { "name": "Fees, hours & transport", "href": "#process" },
+        { "name": "Senior School Tie-ups", "href": "#senior" }
+      ],
+      "note": "Submit a website enquiry or send us a message on WhatsApp to connect with the Dolphin Kids team. An enquiry does not confirm admission, a booking or a franchise partnership. Please confirm fees, Day Care hours, services and transport arrangements with our team.",
+      "disclaimer": "Admission and franchise approval, continuation and cancellation are at the discretion of Dolphin Kids management. Dolphin Kids reserves the right to decline an application or cancel an admission or franchise arrangement at any time, subject to applicable law, agreed terms and any required notice or refund obligations. Management decisions are final within these limits; this notice does not restrict statutory rights or legal remedies.",
+      "brochures": [
+        { "name": "Admission & Day Care brochure", "href": "#enquire" },
+        { "name": "Franchise brochure", "href": "#franchise" }
+      ],
+      "privacy_label": "Privacy choices"
+    },
+    "BackToTop": { "aria_label": "Back to top" },
+    "MobileBar": {
+      "float_label": "WhatsApp our team",
+      "float_href": "https://wa.me/919310589888",
+      "items": [
+        { "name": "Call", "href": "tel:+919811029884" },
+        { "name": "WhatsApp", "href": "https://wa.me/919310589888" },
+        { "name": "Campus visit", "href": "#enquire" },
+        { "name": "Enquire", "href": "#enquire" }
+      ]
+    }
+  },
+  "categories": {
+    "Education": {
+      "templateComponents": {
+        "template-1": {
+          "pages": {
+            "home": {
+              "title": "Home",
+              "pageName": "Home",
+              "metadata": {
+                "title": "Dolphin Kids School Greater Noida | Preschool to Grade 2, Day Care",
+                "description": "Indian and international curriculum from Preschool to Grade 2, with premium Day Care in Greater Noida. Growing children since 2002."
+              },
+              "components": [
+                { "key": "HeroSection", "component": "Hero" },
+                { "key": "AboutSection", "component": "About" },
+                { "key": "ProgrammesSection", "component": "Programmes" },
+                { "key": "ProcessSection", "component": "Process" },
+                { "key": "ParentInfoSection", "component": "ParentInfo" },
+                { "key": "WhySection", "component": "Why" },
+                { "key": "LearningSection", "component": "Learning" },
+                { "key": "CampusSection", "component": "Campus" },
+                { "key": "DayCareSection", "component": "DayCare" },
+                { "key": "TourSection", "component": "Tour" },
+                { "key": "ActivitiesSection", "component": "Activities" },
+                { "key": "SeniorSection", "component": "Senior" },
+                { "key": "ParentsSection", "component": "Parents" },
+                { "key": "JournalSection", "component": "Journal" },
+                { "key": "FranchiseSection", "component": "Franchise" },
+                { "key": "EnquireSection", "component": "Enquire" }
+              ]
+            }
+          },
+          "sections": {
+            "hero": {
+              "id": "home",
+              "badge": "ADMISSIONS OPEN",
+              "eyebrow": "Dolphin Kids School · Greater Noida · Since 2002",
+              "title": "Preschool to Grade",
+              "title_rest": "2",
+              "title_highlight": "& Day Care.",
+              "lead_strong": "Indian & International Curriculum.",
+              "lead": "Indian values and foundational learning, enriched by international early-years programmes. Premium Day Care, with Extended Day Care for Dolphin Group families.",
+              "primary_text": "Admission enquiry",
+              "primary_href": "#enquire",
+              "secondary_text": "Download Admission Brochure",
+              "secondary_href": "#enquire",
+              "phone": "98110 29884",
+              "phone_href": "tel:+919811029884",
+              "whatsapp_text": "Or message us on WhatsApp (optional)",
+              "whatsapp_href": "https://wa.me/919310589888",
+              "links": [
+                { "name": "Find your child's programme", "href": "#admissions" },
+                { "name": "Visit our campus virtually", "href": "#campus" },
+                { "name": "Explore franchise opportunities", "href": "#franchise" }
+              ],
+              "origins": [
+                { "country": "India", "detail": "Indian values and foundational learning, with hands-on mathematics through Jodo Gyan." },
+                { "country": "England", "detail": "Jolly Phonics and Jolly Grammar for literacy; STEM UK as listed by the school." },
+                { "country": "Australia", "detail": "Fitzroy Readers: a phonics-based pathway towards reading fluency." }
+              ],
+              "origins_note": "Programme origins, not government endorsement or board accreditation.",
+              "poster": "/media/campus-tour-poster.webp",
+              "poster_alt": "A classroom on the Dolphin Kids campus in Greater Noida",
+              "play_label": "Play school film",
+              "pause_label": "Pause school film",
+              "video": "/media/school-film.mp4",
+              "year": "2002",
+              "year_label": "Growing children since",
+              "caption": "Our campus, Greater Noida. Original promotional film; current programmes are listed below."
+            },
+            "about": {
+              "id": "about",
+              "index": "2002",
+              "eyebrow": "About Dolphin Kids School",
+              "title": "Nurturing Young Minds, Inspiring Bright Futures",
+              "paragraphs": [
+                "Dolphin Kids School, established in 2002, is committed to providing high-quality foundational education through a blend of international teaching methodologies, innovative learning practices and Indian values.",
+                "We believe every child is unique and deserves an environment that encourages curiosity, creativity, confidence and independent thinking.",
+                "Our educational approach integrates Montessori, experiential and inquiry-based learning with internationally recognised programmes such as Jolly Phonics & Grammar (UK), Fitzroy Readers (Australia), STEM UK and Jodo Gyan Mathematics.",
+                "Our focus extends beyond academics to holistic development through Personal, Social and Emotional Development (PSED), performing arts, music, dance, theatre, sports and creative exploration."
+              ],
+              "closing": "At Dolphin Kids School, we aim to build strong foundations that prepare children not just for their next academic stage but for lifelong success.",
+              "image": "/media/campus-gallery-5.webp",
+              "image_alt": "Adults meeting together on the Dolphin Kids campus",
+              "image_caption": "On campus at Dolphin Kids, Greater Noida",
+              "image_year": "Since 2002",
+              "pillars": [
+                { "icon": "compass", "title": "Our Vision", "text": "To nurture more creative experts and scientists: curious children who grow into confident thinkers, makers and communicators." },
+                { "icon": "target", "title": "Our Mission", "text": "To provide high-quality foundational education that blends international teaching methodologies, innovative learning practices and Indian values, so every child builds strong foundations for the next stage and for life." },
+                { "icon": "lightbulb", "title": "Our Educational Philosophy", "text": "Every child is unique. We integrate Montessori, experiential and inquiry-based learning so children learn through curiosity, creativity, confidence and independent thinking." },
+                { "icon": "award", "title": "Our Academic Excellence", "text": "Structured early literacy and numeracy through programmes such as Jolly Phonics & Grammar (UK), Fitzroy Readers (Australia), the STEM UK programme offered at school and Jodo Gyan Mathematics." },
+                { "icon": "heart", "title": "Why Choose Dolphin Kids School?", "text": "Learning that goes beyond academics: PSED, performing arts, music, dance, theatre, sports and creative exploration, with warm teachers who know each child." }
+              ]
+            },
+            "programmes": {
+              "id": "admissions",
+              "index": "02",
+              "eyebrow": "Smart admission finder",
+              "title": "Little Beginnings. Limitless Possibilities.",
+              "lead": "Preschool to Grade 2 — Six Learning Stages. One Inspiring Journey.",
+              "ribbon": "Indian & International Curriculum | Holistic Learning | Future-Ready Skills",
+              "cards": [
+                { "eyebrow": "Premium Day Care", "title": "Beyond School. Beyond Boundaries.", "text": "A second home for learning, growth and care. Extended Day Care for Dolphin Group pupils.", "href": "#daycare", "link": "Explore care options" },
+                { "eyebrow": "International School of Music & Performing Arts", "title": "Discover. Create. Perform.", "text": "Music, Dance, Acting & Performing Arts.", "href": "#learning", "link": "Explore the activities" }
+              ],
+              "note": "Age eligibility is indicative and subject to confirmation by our admissions team.",
+              "process_link": "See the admission process and documents required",
+              "process_href": "#process",
+              "badge": "Minimum age",
+              "details_label": "Programme details",
+              "whatsapp_label": "Enquire on WhatsApp",
+              "whatsapp_href": "https://wa.me/919310589888",
+              "age_check": {
+                "id": "age-check",
+                "title": "Age eligibility check",
+                "text": "For Nursery to Grade 2 in the school-approved session, age is calculated as of the approved cut-off. Pre-Nursery is separate: from 20 months, without this session cut-off. Our admissions team will confirm eligibility.",
+                "session_label": "School-approved admission session",
+                "session_placeholder": "Select an approved session",
+                "sessions": ["2026–27", "2027–28"],
+                "checking_label": "Checking admission for",
+                "tracks": [
+                  { "id": "nursery", "name": "Nursery to Grade 2" },
+                  { "id": "pre", "name": "Pre-Nursery — from 20 months" }
+                ],
+                "dob_label": "Child's date of birth",
+                "empty_result": "Result will appear here. Or call",
+                "phone": "98110 29884",
+                "phone_href": "tel:+919811029884",
+                "cutoff": "2027-03-31",
+                "cutoff_label": "31 March 2027"
+              },
+              "items": [
+                { "name": "Preschool / Pre-Nursery", "age": "From 20 months", "months": 20, "focus": "Early childhood development · Sensory learning · Montessori · Play-based learning" },
+                { "name": "Nursery PP1", "age": "From 2 years 8 months", "months": 32, "focus": "Language development — calligraphy and reading · Vocabulary · Phonics readiness with Jolly Phonics" },
+                { "name": "LKG PP2", "age": "From 3 years 8 months", "months": 44, "focus": "Jolly Phonics · Jolly Grammar · Fitzroy Readers · Reading & Comprehension" },
+                { "name": "UKG PP3", "age": "From 4 years 8 months", "months": 56, "focus": "Advanced Jolly Phonics · Jolly Grammar · Fitzroy Readers & Reading Fluency · Reading Comprehension" },
+                { "name": "Grade 1", "age": "From 5 years 8 months", "months": 68, "focus": "English Language & Jolly Grammar · Fitzroy Readers & Reading Fluency · Reading Comprehension · Creative Writing" },
+                { "name": "Grade 2", "age": "From 6 years 8 months", "months": 80, "focus": "Advanced English Language & Grammar · Fitzroy Readers & Advanced Reading Skills · Reading Fluency" }
+              ]
+            },
+            "process": {
+              "id": "process",
+              "index": "01–09",
+              "eyebrow": "Admission process",
+              "scope": "Nursery to Grade 2",
+              "title": "Making every step towards learning simple, smooth and memorable.",
+              "lead": "At Dolphin Kids School, we believe that every child is unique. Our admission process is designed to make the journey from the first enquiry to the first day of school easy, transparent and parent-friendly.",
+              "notice": "This process applies to Nursery through Grade 2 only. Pre-Nursery is not included. For Pre-Nursery admission from 20 months, please contact our admissions team separately; the 31 March session cut-off does not apply.",
+              "actions": [
+                { "name": "Start an enquiry", "href": "https://wa.me/919310589888", "style": "solid" },
+                { "name": "Call 98110 29884", "href": "tel:+919811029884", "style": "outline" },
+                { "name": "Admission brochure (PDF)", "href": "#enquire", "style": "link" }
+              ],
+              "action_note": "WhatsApp opens with a prepared message; nothing is sent until you press send.",
+              "steps_title": "Nine steps, from first hello to first day",
+              "steps": [
+                { "title": "Admission Enquiry", "intro": "Parents can enquire about admissions through our website, telephone, WhatsApp or by visiting the school campus.", "points": ["Share basic details of the child.", "Know about programmes, age eligibility, facilities and fee structure.", "Schedule a school visit."] },
+                { "title": "Campus Visit & School Tour", "intro": "Parents are invited to visit the Dolphin Kids campus to experience our learning environment.", "points": ["Explore classrooms, activity zones and play areas.", "Understand our curriculum and teaching methodology.", "Interact with the admission counsellor.", "Learn about day care, transport and extracurricular activities."] },
+                { "title": "Admission Counselling", "intro": "Our admission team helps parents select the most suitable programme based on the child's age, previous schooling and developmental readiness.", "points": ["Discussion about the child's interests and learning needs.", "Explanation of curriculum, programmes and facilities.", "Guidance on class placement and school readiness."] },
+                { "title": "Registration & Application Form", "intro": "Parents complete the admission registration process.", "points": ["Fill in the admission application form.", "Submit the required registration fee.", "Provide the child's and parents' basic information.", "Receive acknowledgement of registration."], "note": "Registration does not guarantee admission." },
+                { "title": "Child Interaction & Readiness Assessment", "intro": "An age-appropriate interaction is conducted to understand the child's developmental level.", "points": ["Play-based interaction for younger children.", "Observation of communication, social interaction and confidence.", "Age-appropriate academic interaction for higher grades.", "No formal entrance examination for early years."], "note": "The interaction is intended to understand the child's learning needs and support appropriate class placement." },
+                { "title": "Document Submission", "intro": "Parents are requested to submit the required documents, listed in full in the checklist.", "points": ["Birth certificate, photographs and address proof.", "Aadhaar, previous report card and Transfer Certificate wherever applicable.", "PEN for students transferring from another school, wherever applicable."] },
+                { "title": "Admission Confirmation & Fee Payment", "intro": "Once the application and documents are verified, parents receive admission confirmation.", "points": ["Payment of admission and applicable fees.", "Confirmation of the allotted class.", "Issuance of fee receipt.", "Sharing of admission confirmation and joining details."] },
+                { "title": "Parent Orientation & Welcome", "intro": "Before the child begins school, parents are guided through the school's policies and routines.", "points": ["Introduction to teachers and school staff.", "Information about school timings and uniform.", "Explanation of MySkoolLite Parent App.", "Transport and day care arrangements, if required."] },
+                { "title": "Welcome to Dolphin Kids!", "intro": "Your child's exciting learning journey begins!", "points": ["Welcome kit and school essentials.", "Classroom familiarisation.", "Introduction to classmates and teachers.", "A happy and comfortable settling-in experience."] }
+              ],
+              "checklist_kicker": "Checklist",
+              "checklist_title": "Documents required at the time of admission",
+              "checklist_note": "PEN: Permanent Education Number, for students transferring from another school, wherever applicable.",
+              "documents": [
+                { "name": "Child's Birth Certificate", "detail": "Mandatory" },
+                { "name": "Child's Photographs", "detail": "Recent, passport-size" },
+                { "name": "Parents' Photographs", "detail": "Recent, passport-size" },
+                { "name": "Address Proof", "detail": "Required (parents)" },
+                { "name": "Aadhaar Details", "detail": "Child / parents, wherever applicable" },
+                { "name": "Previous School Report Card", "detail": "For transfer cases" },
+                { "name": "Transfer Certificate", "detail": "Wherever applicable" },
+                { "name": "PEN Number", "detail": "For applicable transfer cases" }
+              ],
+              "age_kicker": "Age eligibility",
+              "age_title": "Nursery to Grade 2: minimum age",
+              "age_text": "For the 2027–28 session, age is calculated as on 31 March 2027.",
+              "ages": [
+                { "name": "Nursery PP1", "age": "2 years 8 months" },
+                { "name": "LKG PP2", "age": "3 years 8 months" },
+                { "name": "UKG PP3", "age": "4 years 8 months" },
+                { "name": "Grade 1", "age": "5 years 8 months" },
+                { "name": "Grade 2", "age": "6 years 8 months" }
+              ],
+              "age_note": "Age eligibility should be verified against the applicable academic session's prescribed cut-off date and prevailing government guidelines.",
+              "guidelines_kicker": "Please note",
+              "guidelines_title": "Important admission guidelines",
+              "guidelines": [
+                "Admissions are subject to seat availability.",
+                "Submission of an application or registration form does not guarantee admission.",
+                "Admission is confirmed only after document verification and payment of applicable fees.",
+                "Parents must provide accurate information and valid documents.",
+                "Any change in personal details must be communicated to the school office.",
+                "The school reserves the right to verify submitted documents."
+              ],
+              "closing_title": "Where Little Minds Grow into Big Thinkers!",
+              "closing_text": "Dolphin Kids School, Gamma 1, Greater Noida",
+              "closing_button": "Request a campus visit",
+              "closing_href": "#enquire"
+            },
+            "why": {
+              "id": "why",
+              "index": "05",
+              "eyebrow": "Why Dolphin Kids",
+              "title": "Why parents choose Dolphin Kids.",
+              "lead": "Six commitments that shape every day on our Greater Noida campus.",
+              "image": "/media/campus-gallery-2.webp",
+              "image_alt": "Children at Dolphin Kids during a classroom activity",
+              "items": [
+                { "icon": "teacher", "title": "Qualified and experienced teachers", "text": "Early childhood educators who know each child by name, pace and personality, with ongoing professional development." },
+                { "icon": "speech", "title": "Language and speech development", "text": "Phonics, storytelling, Show and Tell and public speaking, so children find their words and use them with confidence." },
+                { "icon": "psed", "title": "Positive behavioural management and PSED", "text": "Empathy, sharing and self-regulation, taught gently through daily routines and guided play." },
+                { "icon": "care", "title": "Caring and supportive staff", "text": "Warm caregivers, close parent communication and emotional support through every settling-in day." },
+                { "icon": "campus", "title": "Extensive campus and learning infrastructure", "text": "Labs, studios, indoor and outdoor play zones, and dedicated activity centres under one roof." },
+                { "icon": "safety", "title": "Safety and individual attention", "text": "Management-listed CCTV, infirmary and age-appropriate spaces, with attention that stays on your child. See them on a visit." }
+              ],
+              "safety": {
+                "id": "safety-care",
+                "eyebrow": "Safety and daily care",
+                "title": "See it for yourself,",
+                "title_highlight": "ask everything.",
+                "lead": "These facilities are listed by school management. The best reassurance is your own visit, so here is what to look at and what to ask.",
+                "image": "/media/campus-gallery-3.webp",
+                "image_alt": "A space on the Dolphin Kids campus",
+                "facilities": [
+                  { "icon": "cctv", "title": "CCTV on campus", "text": "Ask where cameras cover and how footage is handled." },
+                  { "icon": "infirmary", "title": "Infirmary", "text": "Ask who attends to a child who feels unwell, and how you are told." },
+                  { "icon": "kitchen", "title": "In-house kitchen", "text": "Ask to see the kitchen and a sample weekly menu." },
+                  { "icon": "rest", "title": "Rest and age-appropriate spaces", "text": "Ask how nap, play and learning areas are set up for each age." }
+                ],
+                "areas": [
+                  { "value": "20,000", "label": "sq ft indoors" },
+                  { "value": "10,000", "label": "sq ft of green space" },
+                  { "value": "5,000", "label": "sq ft for Day Care" }
+                ],
+                "ask_title": "On your campus visit, ask",
+                "ask": [
+                  "Who will greet and settle my child each morning?",
+                  "How are children handed over at pick-up?",
+                  "How will I hear about my child's day?",
+                  "What happens if my child is unwell during the day?",
+                  "Which staff are with my child in Day Care hours?"
+                ],
+                "button": "Book a campus visit",
+                "button_href": "#enquire"
+              }
+            },
+            "learning": {
+              "id": "learning",
+              "index": "04",
+              "eyebrow": "Indian & International Curriculum",
+              "title": "Indian foundations. A world of discovery.",
+              "lead": "Indian values and foundational learning meet international early-years programmes: literacy, hands-on mathematics, science, movement and the arts, woven into one connected journey from Preschool to Grade 2.",
+              "origins": [
+                { "country": "India", "detail": "Indian values and foundational learning, with hands-on mathematics through Jodo Gyan." },
+                { "country": "England", "detail": "Jolly Phonics and Jolly Grammar for literacy; STEM UK as listed by the school." },
+                { "country": "Australia", "detail": "Fitzroy Readers: a phonics-based pathway towards reading fluency and confidence." }
+              ],
+              "origins_note": "Flags identify programme origins only, not government or provider endorsement. Indian & International Curriculum describes our blend of learning approaches, not CBSE or IB accreditation. The management-confirmed Korean learning partnership is separate from these programme origins.",
+              "filters": ["All", "Literacy", "Labs", "Movement and arts", "Holistic Development"],
+              "learn_more": "Learn more",
+              "items": [
+                { "id": "international", "icon": "globe", "name": "International Curriculum", "group": "Holistic Development", "text": "An internationally inspired early-years framework that brings literacy, enquiry, labs and the arts into one connected day.", "points": ["Global learning approaches", "Child-centred classrooms", "Preschool to Grade 2 continuity"] },
+                { "id": "jolly-phonics", "icon": "type", "origin": "England", "name": "Jolly Phonics", "group": "Literacy", "text": "A multisensory early literacy programme using sounds, actions, stories and songs to build reading and writing foundations.", "points": ["Letter sounds", "Sound recognition", "Blending", "Early reading"] },
+                { "id": "jolly-grammar", "icon": "pen", "origin": "England", "name": "Jolly Grammar", "group": "Literacy", "text": "Grammar made visible and joyful, so children learn how sentences work as they learn to write them.", "points": ["Grammar awareness", "Sentence construction", "Punctuation", "Spelling"] },
+                { "id": "grammar-starter", "icon": "book", "name": "Grammar Starter", "group": "Literacy", "text": "Age-appropriate grammar foundations for the youngest writers and speakers.", "points": ["First grammar concepts", "Language development", "Confident speaking"] },
+                { "id": "fitzroy", "icon": "marked", "origin": "Australia", "name": "Fitzroy Readers", "group": "Literacy", "text": "A phonics-based reading series that moves children from decoding to fluent, confident reading.", "points": ["Phonics-based reading", "Decoding", "Vocabulary", "Reading fluency"] },
+                { "id": "montessori", "icon": "puzzle", "name": "Montessori Learning", "group": "Holistic Development", "text": "Purposeful materials and practical life work that grow independence and concentration.", "points": ["Practical life", "Independence", "Fine motor development"] },
+                { "id": "steam", "icon": "atom", "name": "STEAM Education", "group": "Labs", "text": "Science, Technology, Engineering, Arts and Mathematics through building, designing and testing ideas.", "points": ["Hands-on experiments", "Design", "Creative problem-solving"] },
+                { "id": "language-lab", "icon": "mic", "name": "Language Labs", "group": "Labs", "text": "A dedicated space for speech, listening and the confidence to speak in front of others.", "points": ["Speech development", "Storytelling", "Public speaking"] },
+                { "id": "science-lab", "icon": "flask", "name": "Science Labs", "group": "Labs", "text": "Small scientists observe, predict and discover cause and effect.", "points": ["Observation", "Experimentation", "Cause and effect"] },
+                { "id": "evs-lab", "icon": "leaf", "name": "EVS Labs", "group": "Labs", "text": "The world around us: plants, animals, water, seasons and everyday life.", "points": ["Plants", "Animals", "Seasons", "Environment"] },
+                { "id": "maths-lab", "icon": "shapes", "name": "Maths Labs", "group": "Labs", "text": "Numbers you can hold: counting, patterns, shapes and measuring.", "points": ["Numbers", "Patterns", "Shapes", "Measurement"] },
+                { "id": "kindergym", "icon": "gym", "name": "KinderGym", "group": "Movement and arts", "text": "Physical confidence through balance, coordination and joyful movement.", "points": ["Balance", "Coordination", "Physical confidence"] },
+                { "id": "kindermusic", "icon": "music", "name": "KinderMusic", "group": "Movement and arts", "text": "Rhythm, melody, voice and instruments as a daily language of expression.", "points": ["Rhythm", "Melody", "Instruments"] },
+                { "id": "financial", "icon": "bank", "name": "Financial Literacy", "group": "Holistic Development", "text": "Early money sense through play: saving, exchange and simple choices.", "points": ["Money awareness", "Saving", "Decision-making"] },
+                { "id": "psed", "icon": "heart", "name": "PSED", "group": "Holistic Development", "text": "Personal, Social and Emotional Development: learning to understand feelings, build friendships and grow in confidence.", "points": ["Self-awareness", "Empathy", "Cooperation"] },
+                { "id": "enquiry", "icon": "search", "name": "Enquiry-Based Learning", "group": "Holistic Development", "text": "Children ask, explore and reason their way to understanding. The school has a management-confirmed Korean learning partnership; this is not a Korean curriculum or accreditation claim.", "points": ["Asking questions", "Exploring", "Reasoning"] },
+                { "id": "performing", "icon": "drama", "name": "Dance, Music and Theatre", "group": "Movement and arts", "text": "Stage, studio and story: children find their voice through performance.", "points": ["Dance", "Acting and theatre", "Music", "Stage confidence"] }
+              ]
+            },
+            "campus": {
+              "id": "campus",
+              "index": "05",
+              "eyebrow": "Campus and infrastructure",
+              "title": "One campus. A world of learning experiences.",
+              "lead": "An extensive campus designed for global learning and exceptional childhood experiences.",
+              "stats": [
+                { "label": "Indoor & outdoor play zones", "value": "20,000", "unit": "sq ft", "text": "Combined indoor and outdoor space for active play, movement and exploration." },
+                { "label": "Green space", "value": "10,000", "unit": "sq ft", "text": "Room to connect with nature and enjoy outdoor discovery at our Greater Noida campus." }
+              ],
+              "hero": {
+                "src": "/media/campus-tour-poster.webp",
+                "alt": "Colourful learning room shown in the original Dolphin Kids campus tour",
+                "caption": "Room to grow, together"
+              },
+              "gallery": [
+                { "src": "/media/campus-gallery-4.webp", "alt": "Children playing together in an indoor ball pit at Dolphin Kids", "title": "Indoor Play Zones", "text": "Soft, air-conditioned indoor play for active games and movement in any weather." },
+                { "src": "/media/campus-gallery-1.webp", "alt": "A child with a caregiver at an outdoor slide at Dolphin Kids", "title": "Outdoor Play Zones", "text": "Slides, open-air play and room to run, climb and play together." },
+                { "src": "/media/campus-gallery-3.webp", "alt": "Children on swings surrounded by greenery and trees at Dolphin Kids", "title": "Green Spaces", "text": "Fresh air, trees and greenery for outdoor discovery close to nature." }
+              ],
+              "zones": [
+                { "title": "Learning labs", "text": "Language, STEAM, Science, EVS and Maths labs, plus Montessori and computer spaces." },
+                { "title": "Indoor play zones", "text": "Large, air-conditioned spaces for active play whatever the Greater Noida weather." },
+                { "title": "Outdoor play zones", "text": "Open-air play, a splash pool and a duck pond for curious explorers." },
+                { "title": "Sports", "text": "Basketball, badminton and KinderGym for coordination and team spirit." },
+                { "title": "Studios", "text": "Dance and theatre studios with room to rehearse, perform and celebrate." },
+                { "title": "Care facilities", "text": "Kitchen and meal facilities, rest spaces and power backup." }
+              ]
+            },
+            "daycare": {
+              "id": "daycare",
+              "index": "06",
+              "eyebrow": "Premium Day Care",
+              "title": "More than a Day Care. A second home.",
+              "main_badge": "From 20 months",
+              "main_title": "Dolphin Kids Day Care",
+              "main_text": "A safe, joyful day for young children, with learning woven through play and rest. Open to families whose children attend other schools.",
+              "points": ["Caring caregivers", "Indoor and outdoor activities", "Rest facilities and healthy meals", "Language development", "CCTV, air-conditioning and power backup", "Care arrangements to suit your family"],
+              "extended_badge": "Dolphin Group pupils only",
+              "extended_title": "Extended Day Care",
+              "extended_text": "Longer supervised hours for children already enrolled in a Dolphin Group school, so the school day continues calmly into the afternoon.",
+              "primary_label": "Explore Day Care",
+              "primary_href": "#enquire",
+              "whatsapp_label": "Enquire on WhatsApp",
+              "whatsapp_href": "https://wa.me/919811029884",
+              "extended_label": "How it works",
+              "extended_href": "#enquire"
+            },
+            "parents": {
+              "id": "parents",
+              "index": "09",
+              "eyebrow": "Parent trust",
+              "title": "In parents' own words.",
+              "lead": "No scripts, no star ratings. These are the parent videos shared on the school's own website. Press play to hear them.",
+              "notice": "Supplied parent testimonial film. Details shown reflect the family's experience at the time of recording.",
+              "label": "Parent video",
+              "footnote": "Teacher profiles, events and activity galleries will be added as the school shares approved material.",
+              "items": [
+                { "image": "/media/parent-story-sisters.webp", "video": "/media/prajapati.mp4", "title": "The Prajapati family", "text": "Two sisters at Dolphin Kids" },
+                { "image": "/media/parent-story-gaurika.webp", "video": "/media/gaurika.mp4", "title": "Gaurika's parents", "text": "Gaurika's family" }
+              ]
+            },
+            "parentInfo": {
+              "id": "parent-information",
+              "index": "02c",
+              "eyebrow": "For parents",
+              "title": "Fees, Day Care timings and transport",
+              "lead": "Information is published only after the school approves it. Where it is not yet published, ask the admissions team for current details.",
+              "phone": "98110 29884",
+              "phone_href": "tel:+919811029884",
+              "call_label": "Call admissions",
+              "action_label": "Ask on WhatsApp",
+              "action_href": "https://wa.me/919811029884",
+              "items": [
+                { "icon": "fees", "title": "Fees", "text": "Current fees for the session you are applying to are shared directly by the admissions office. Please ask for the current fee schedule for your child's class." },
+                { "icon": "timings", "title": "Day Care timings", "text": "Day Care schedules are confirmed by the school. Please ask for the current timings and available plans." },
+                { "icon": "transport", "title": "Transport", "text": "Transport availability depends on your route and location. Please share your area to ask whether a route is currently available." }
+              ]
+            },
+            "tour": {
+              "id": "tour",
+              "index": "07",
+              "eyebrow": "Take a virtual tour of Dolphin Kids",
+              "title": "Discover the Dolphin Kids experience.",
+              "lead": "Walk through our classrooms, labs and play spaces in the school's own tour film. Sound plays only when you choose.",
+              "poster": "/media/campus-tour-poster.webp",
+              "video": "/media/school-tour.mp4",
+              "video_title": "Dolphin Kids school tour",
+              "notice": "Supplied promotional film. It may contain historical contact numbers and timings; current admissions: +91 98110 29884. Please confirm Day Care hours and availability with the school.",
+              "play_label": "Play school tour",
+              "button_text": "Request a campus visit",
+              "button_href": "#enquire",
+              "links_label": "More from the school:",
+              "links": [
+                { "name": "Homepage film", "href": "#home" },
+                { "name": "Parent videos", "href": "#parents" }
+              ]
+            },
+            "activities": {
+              "id": "activities",
+              "index": "08",
+              "eyebrow": "Extracurricular development",
+              "title": "Stages, studios and open fields.",
+              "lead": "Confidence grows when children perform, play and make things with their hands. Space for movement, music and expression is part of a well-rounded childhood.",
+              "image": "/media/campus-gallery-2.webp",
+              "image_alt": "Children celebrating together at Dolphin Kids",
+              "caption": "Shared stories. New friendships. Room to express.",
+              "items": [
+                { "name": "Dance", "icon": "dance" },
+                { "name": "Acting", "icon": "acting" },
+                { "name": "Theatre", "icon": "theatre" },
+                { "name": "Music", "icon": "music" },
+                { "name": "Instruments", "icon": "instruments" },
+                { "name": "Sports", "icon": "sports" },
+                { "name": "Calligraphy", "icon": "calligraphy" },
+                { "name": "Creative arts", "icon": "arts" }
+              ]
+            },
+            "senior": {
+              "id": "senior",
+              "index": "Next",
+              "eyebrow": "Senior school tie-ups",
+              "title": "Seamless Transition to Leading Senior Schools",
+              "highlight": "Strong Foundations Today. Limitless Opportunities Tomorrow.",
+              "paragraphs": [
+                "At Dolphin Kids School, we believe that a child's educational journey should continue seamlessly beyond the foundational years.",
+                "We have established tie-ups and associations with several leading senior schools in Greater Noida and across India to support parents in exploring suitable educational opportunities for their children.",
+                "Our network of senior-school associations helps parents understand different educational pathways, admission procedures and curriculum options for the next stage of their child's academic journey."
+              ],
+              "boards_label": "Educational pathways parents can explore",
+              "boards": ["CBSE", "ICSE", "IB", "Cambridge/IGCSE"],
+              "points": [
+                { "icon": "school", "text": "Associations with reputed senior schools in Greater Noida and across India." },
+                { "icon": "compass", "text": "Guidance and assistance with senior-school admissions." },
+                { "icon": "book", "text": "Exposure to multiple educational boards, including CBSE, ICSE, IB and Cambridge/IGCSE." },
+                { "icon": "grad", "text": "Academic preparation for a smooth transition to higher classes." },
+                { "icon": "users", "text": "Parent counselling and admission guidance." }
+              ],
+              "note": "For current associated senior school details, please contact our admissions team. We will gladly walk you through the options for your child.",
+              "disclaimer": "Admissions are subject to individual school policies and availability.",
+              "button": "Career Guidance and Admission Committee",
+              "button_href": "https://wa.me/919811029884?text=Hello%20Dolphin%20Kids%20Career%20Guidance%20and%20Admission%20Committee%2C%20I%20would%20like%20to%20explore%20senior%20school%20opportunities."
+            },
+            "journal": {
+              "id": "journal",
+              "index": "10",
+              "eyebrow": "The Parenting Journal",
+              "title": "Notes for the years that matter most.",
+              "lead": "Practical, evidence-informed guidance for parents of young children, written by our team.",
+              "button": "Read the Journal",
+              "button_href": "#journal"
+            },
+            "franchise": {
+              "id": "franchise",
+              "index": "10",
+              "eyebrow": "Dolphin Kids franchise opportunity",
+              "badge": "FOR EDUCATION PARTNERS IN INDIA AND BEYOND",
+              "title": "Build a Successful Education Business with a Trusted Brand",
+              "lead": "Own a premium preschool and school franchise with Dolphin Kids. Join a network focused on international learning practices, quality education, innovation and sustainable growth, with a model designed for flexibility, brand support and long-term growth potential.",
+              "disclaimer": "For investors, this is an opportunity to evaluate, not a promise of results. Business success, enrolment and returns are not guaranteed and depend on your location, execution and market.",
+              "targets": [
+                { "label": "Target operating profit margin", "value": "40–60%", "note": "Of fees collected; not a guaranteed return." },
+                { "label": "Target initial-capital recovery", "value": "2 years", "note": "A planning target, not a payback promise." },
+                { "label": "Initial working-capital reserve", "value": "3 months", "note": "Operating expenses continue beyond this reserve." }
+              ],
+              "targets_note": "School-management targets, not guarantees or verified historical results. Actual outcomes depend on enrolment, fee collection, property costs, staffing, occupancy and execution. Obtain a full budget and independent advice before investing.",
+              "reasons_eyebrow": "Why choose a Dolphin Kids franchise",
+              "reasons_title": "Seven reasons partners look closer",
+              "reasons": [
+                { "n": "01", "title": "Global demand from parents", "points": ["Growing preference for international-quality early childhood education.", "Increasing demand for structured preschool and primary education.", "Internationally inspired curriculum and modern teaching methodologies.", "Opportunity to serve parents seeking premium educational experiences."] },
+                { "n": "02", "title": "Premium and higher fee structure", "points": ["Opportunity to operate with a premium fee positioning.", "Access to multiple programmes and value-added learning offerings.", "Scope for diversified revenue through preschool, primary school, day care and extracurricular activities.", "Flexible fee positioning based on location, infrastructure and market potential."] },
+                { "n": "03", "title": "Flexible area franchise model", "points": ["Franchise rights are associated with an approved geographical area.", "Suitable for both owned and rented properties.", "For rented premises, relocation may be permitted, subject to company approval.", "Opportunity to retain franchise rights while changing location within the approved territory."] },
+                { "n": "04", "title": "Established and diversified network", "points": ["Become part of the Dolphin Kids franchise network across Pre-Nursery to Senior School, Day Care and ISMPA.", "Benefit from shared knowledge, operational expertise and brand recognition.", "Access standardised academic programmes and operational systems.", "Explore multiple education formats under one brand."] },
+                { "n": "05", "title": "Royalty structure: 10–25% from day one", "points": ["Royalty applies from the first day of operations.", "The applicable rate within the 10–25% range depends on the selected franchise model.", "Commercial terms are defined under the franchise agreement.", "Structured brand and academic support in accordance with the applicable package."] },
+                { "n": "06", "title": "Flexible ownership and constitution", "points": ["Flexibility to change the constitution of the franchise entity, subject to company approval.", "Addition of business partners or directors permitted, subject to company approval.", "Change in ownership may be considered, subject to the agreement.", "Business continuity can be maintained through an approved transfer process."] },
+                { "n": "07", "title": "Long franchise tenure: up to 7 years", "points": ["Franchise agreement tenure of up to 7 years, subject to agreed terms.", "Supports long-term business planning and operational stability.", "Opportunity to establish and grow your educational institution over an extended period.", "Renewal and continuation subject to the franchise agreement."] }
+              ],
+              "terms": [
+                { "label": "Royalty range", "value": "10–25%", "note": "From day one; rate depends on the model." },
+                { "label": "Agreement tenure", "value": "Up to 7 years", "note": "Renewal subject to agreement terms." },
+                { "label": "Territory", "value": "Approved area", "note": "Relocation and ownership changes need company approval." }
+              ],
+              "terms_note": "The calculation basis, applicable taxes, payment schedule and package inclusions must be confirmed in the signed franchise agreement. Renewal, territory changes and ownership changes remain subject to approval and the applicable agreement.",
+              "support_eyebrow": "What you receive as a franchise partner",
+              "support_title": "Support from launch to everyday operations",
+              "support": ["Brand name and branding support", "Curriculum and academic planning", "Teacher training and orientation", "Admission and marketing guidance", "Operational systems and school management support", "Academic resources and learning programmes", "Website and digital marketing guidance", "Ongoing academic and operational assistance"],
+              "support_note": "Exact support and inclusions depend on the selected franchise package and are confirmed in writing.",
+              "models_eyebrow": "Franchise models",
+              "models_title": "Compare formats and indicative ranges",
+              "models_lead": "Corporate Day Care affiliation starts from ₹2.5 lakh onwards. Final investment, franchise fee, setup, infrastructure requirements, royalty and commercial terms depend on the selected model, location and written project scope.",
+              "view_label": "View format",
+              "models": [
+                { "id": "why", "icon": "award", "title": "Why Dolphin Franchise?", "text": "Brand experience with curriculum, training and operations support.", "points": ["Curriculum support", "Teacher training", "Academic systems", "Marketing assistance"] },
+                { "id": "corporate", "icon": "case", "title": "Corporate Day Care", "text": "Workplace and institutional childcare for organisations.", "points": ["Corporate employee childcare", "Workplace Day Care", "Institutional Day Care"], "fee_label": "Brand affiliation fee", "fee": "₹2.5 lakh–₹1 crore", "fee_note": "Indicative range; confirm scope and inclusions." },
+                { "id": "studio", "icon": "home", "title": "Studio and Home Schools", "text": "Compact early-learning formats for smaller spaces.", "points": ["Compact format", "Early learning focus", "Academic support"], "fee_label": "Area-franchise setup cost", "fee": "₹7–50 lakh", "fee_note": "Indicative range; confirm scope and inclusions." },
+                { "id": "junior", "icon": "baby", "title": "Dolphin Kids Junior", "text": "Preschool and early-learning centres.", "points": ["Preschool", "Early years curriculum", "Training support"], "fee_label": "Setup cost including franchise fee", "fee": "₹10–25 lakh", "fee_note": "Up to 3 rooms; franchise fee included." },
+                { "id": "elementary", "icon": "school", "title": "Elementary and Middle School", "text": "Expandable school formats beyond the early years.", "points": ["Elementary", "Middle School", "Expandable format"], "fee_label": "Franchise fee", "fee": "₹7.5 lakh–₹1 crore", "fee_note": "Setup additional, based on building design." },
+                { "id": "k12", "icon": "landmark", "title": "Dolphin International School K-12", "text": "Full-school opportunities, subject to applicable approvals.", "points": ["Indian and international curriculum options", "Subject to approvals and authorisations"], "fee_label": "K-12 / Senior Secondary franchise fee", "fee": "₹25 lakh–₹5 crore", "fee_note": "Indicative range; confirm scope and inclusions." }
+              ],
+              "projects_kicker": "PROJECT-SCOPED OPPORTUNITY",
+              "projects": [
+                { "title": "Dolphin Kids Premium School", "text": "A premium school opportunity scoped around the site, building and programme mix you propose.", "value": "As per project scope", "note": "No fixed price is published; investment is set after a written scope review." },
+                { "title": "Expandable School Franchise", "text": "A school format planned to grow in stages, with investment customised to the agreed scope.", "value": "Customised investment", "note": "No fixed price is published; investment is set after a written scope review." }
+              ],
+              "discuss_label": "Discuss this format",
+              "discuss_href": "https://wa.me/919811029884",
+              "budget_title": "Build your local operating budget",
+              "budget_text": "Test your own enrolment, fees and costs before requesting a proposal. Your scenario stays on your device; results are estimates, not promised returns.",
+              "whatsapp_label": "Request a franchise proposal on WhatsApp",
+              "whatsapp_href": "https://wa.me/919811029884",
+              "brochure_label": "Download Franchise Brochure",
+              "brochure_href": "#franchise",
+              "form_kicker": "Franchise enquiry",
+              "form_title": "Start a considered conversation",
+              "form_lead": "Tell us where you would like to build a Dolphin Kids school and what you have in mind. Early-stage enquiries are welcome.",
+              "form_note": "Required. Everything marked optional can be left blank.",
+              "consent": "I agree that Dolphin Kids may store these details and contact me by phone, WhatsApp or email about this enquiry. No marketing list sign-up. (Required)",
+              "submit_text": "Send franchise enquiry",
+              "form_footer": "This starts a franchise discussion; it is not an offer, approval or commitment.",
+              "footnote": "WhatsApp opens with a draft message for you to edit and send; no call is booked automatically. Explore five formats, indicative fees and setup ranges. Financial figures are management targets, not guarantees. Curriculum and board options depend on location, eligibility and approvals."
+            },
+            "enquire": {
+              "id": "enquire",
+              "index": "11",
+              "eyebrow": "Admissions open",
+              "title": "Give your child the best start.",
+              "lead": "Complete the admission enquiry below, or call our admissions team. You can also ask about a campus visit on WhatsApp; visit arrangements are confirmed by the school.",
+              "actions": [
+                { "name": "ADMISSION ENQUIRY", "href": "#enquire", "style": "solid" },
+                { "name": "Download Admission Brochure", "href": "#enquire", "style": "tint" },
+                { "name": "ASK ABOUT A CAMPUS VISIT", "href": "https://wa.me/919310589888", "style": "outline" },
+                { "name": "WHATSAPP OUR TEAM", "href": "https://wa.me/919310589888", "style": "outline" }
+              ],
+              "form_kicker": "Admission enquiry",
+              "form_title": "A little about your family",
+              "form_text": "Tell us what you are looking for at Dolphin Kids, Greater Noida. It is fine if you are still exploring programmes.",
+              "form_note": "Required. Everything marked optional can be left blank.",
+              "groups": [
+                {
+                  "title": "Your contact details",
+                  "fields": [
+                    { "name": "parent", "label": "Parent's name", "type": "text", "required": true },
+                    { "name": "phone", "label": "Contact number", "type": "tel", "required": true, "placeholder": "10-digit mobile" },
+                    { "name": "email", "label": "Email", "type": "email", "placeholder": "Optional" }
+                  ]
+                },
+                {
+                  "title": "Your child & your questions",
+                  "fields": [
+                    { "name": "child", "label": "Child's name", "type": "text", "required": true },
+                    { "name": "age", "label": "Child's age or date of birth", "type": "text", "required": true, "placeholder": "e.g. 3 years 9 months" },
+                    { "name": "programme", "label": "Programme of interest", "type": "select", "required": true, "wide": true, "options": ["Preschool / Pre-Nursery", "Nursery PP1", "LKG PP2", "UKG PP3", "Grade 1", "Grade 2", "Not sure yet"] },
+                    { "name": "school", "label": "Current school (if applicable)", "type": "text" },
+                    { "name": "area", "label": "Area / locality", "type": "text", "hint": "Your locality is enough; no full address needed." },
+                    { "name": "message", "label": "Questions or preferred visit time", "type": "textarea", "wide": true }
+                  ]
+                }
+              ],
+              "consent": "I agree that Dolphin Kids may store these details and contact me by phone, WhatsApp or email about this enquiry. No marketing list sign-up.",
+              "submit_text": "Send admission enquiry",
+              "next_note": "An enquiry is the first conversation, not a confirmed admission or campus visit.",
+              "privacy_note": "Your details are for this enquiry, not a marketing list.",
+              "phone_line": "Admissions calling",
+              "phone": "98110 29884",
+              "phone_href": "tel:+919811029884",
+              "image": "/media/parent-story-gaurika.webp",
+              "image_alt": "A Dolphin Kids family",
+              "success_title": "Thank you. Your enquiry is saved.",
+              "success_message": "Our admissions team will be in touch. This form does not confirm a seat."
+            }
+          }
+        }
+      }
+    }
+  }
+}
