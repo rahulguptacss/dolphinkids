@@ -81,7 +81,7 @@ export default function Header({ data }: { data: HeaderData }) {
       </div>
       <header className="sticky top-0 z-50 border-b border-ink/10 bg-paper">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-3">
-          <a href="#home" className="shrink-0"><img src={data.logo} alt={data.logo_alt} className="h-auto w-[min(190px,52vw)] sm:w-[230px] xl:w-[200px]" /></a>
+          <a href={data.logo_href} className="shrink-0"><img src={data.logo} alt={data.logo_alt} className="h-auto w-[min(190px,52vw)] sm:w-[230px] xl:w-[200px]" /></a>
           <nav ref={navRef} aria-label="Main" className="hidden xl:block">
             <ul className="flex items-center gap-1">
               {data.nav.map((group, index) => (

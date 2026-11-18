@@ -23,6 +23,7 @@ export interface HeaderData {
   banner_href: string;
   logo: string;
   logo_alt: string;
+  logo_href: string;
   utility: LinkType[];
   login_text: string;
   coming_soon: string;
