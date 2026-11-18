@@ -3,7 +3,7 @@ import type { DayCareSectionData } from '../../types';
 
 export default function DayCare({ data }: { data: DayCareSectionData }) {
   return (
-    <section id={data.id} className="bg-brand-tint py-20 sm:py-28">
+    <section id={data.id} className="bg-brand-tint py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-brand">
           <span className="font-display font-normal normal-case tracking-normal text-gilt">{data.index}</span>

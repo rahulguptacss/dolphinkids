@@ -8,7 +8,7 @@ export default function Process({ data }: { data: ProcessSectionData }) {
   const [open, setOpen] = useState(0);
 
   return (
-    <section id={data.id} className="bg-paper py-20 sm:py-28">
+    <section id={data.id} className="bg-paper py-12 sm:py-16">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <p className="text-sm font-semibold tracking-wide text-gilt-ink">
           {data.index} <span className="mx-2 text-gilt">—</span>
@@ -18,7 +18,7 @@ export default function Process({ data }: { data: ProcessSectionData }) {
         <h2 className="font-display mt-4 max-w-4xl text-4xl font-normal leading-[1.08] text-ink sm:text-5xl">{data.title}</h2>
         <p className="mt-5 max-w-3xl text-lg leading-relaxed text-body">{data.lead}</p>
         <p className="mt-5 rounded-xl border border-brand/15 bg-brand-tint p-4 text-sm text-ink">
-          <strong>This process applies to Nursery through Grade 2 only.</strong> {data.notice.replace('This process applies to Nursery through Grade 2 only. ', '')}
+          <strong>{data.notice_lead}</strong> {data.notice}
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           {data.actions.map((action) => (

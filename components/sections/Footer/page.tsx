@@ -50,7 +50,7 @@ export default function Footer({ data }: { data: FooterData }) {
           </div>
           <div className="flex shrink-0 flex-col items-start gap-1 md:items-end">
             {data.brochures.map((item) => (
-              <a key={item.name} href={item.href} className="inline-flex min-h-11 items-center gap-2 font-semibold text-brand">
+              <a key={item.name} href={item.href} download className="inline-flex min-h-11 items-center gap-2 font-semibold text-brand">
                 <Download className="h-4 w-4 shrink-0" />
                 {item.name}
               </a>

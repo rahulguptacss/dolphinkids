@@ -2,7 +2,7 @@ import type { CampusSectionData } from '../../types';
 
 export default function Campus({ data }: { data: CampusSectionData }) {
   return (
-    <section id={data.id} className="mx-auto max-w-7xl px-5 py-20 sm:py-28">
+    <section id={data.id} className="mx-auto max-w-7xl px-5 py-12 sm:py-16">
       <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-brand">
         <span className="font-display font-normal normal-case tracking-normal text-gilt">{data.index}</span>
         <span className="mx-3 font-normal text-gilt">—</span>

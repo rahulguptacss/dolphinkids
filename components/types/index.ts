@@ -25,11 +25,22 @@ export interface HeaderData {
   logo_alt: string;
   utility: LinkType[];
   login_text: string;
+  coming_soon: string;
+  phase_title: string;
+  close_label: string;
+  menu_label: string;
+  open_menu: string;
+  close_menu: string;
+  overview_label: string;
+  login_title: string;
+  login_body: string;
+  call_label: string;
   phone: string;
   phone_href: string;
   button_text: string;
   button_href: string;
   promo_text: string;
+  promo_href: string;
   admission_brochure: string;
   admission_brochure_text: string;
   franchise_brochure: string;
@@ -124,6 +135,7 @@ export interface HeroSectionData {
   secondary_text: string;
   secondary_href: string;
   phone: string;
+  call_label: string;
   phone_href: string;
   whatsapp_text: string;
   whatsapp_href: string;
@@ -181,6 +193,12 @@ export interface ProgrammesSectionData {
     tracks: { id: string; name: string }[];
     dob_label: string;
     empty_result: string;
+    below_text: string;
+    indicative: string;
+    age_today: string;
+    age_on: string;
+    years_label: string;
+    months_label: string;
     phone: string;
     phone_href: string;
     cutoff: string;
@@ -196,6 +214,7 @@ export interface ProcessSectionData {
   title: string;
   lead: string;
   notice: string;
+  notice_lead: string;
   actions: { name: string; href: string; style: string }[];
   action_note: string;
   steps_title: string;
@@ -365,6 +384,18 @@ export interface FranchiseSectionData {
   form_title: string;
   form_lead: string;
   form_note: string;
+  success_message: string;
+  school_group: string;
+  select_placeholder: string;
+  name_label: string;
+  phone_label: string;
+  phone_placeholder: string;
+  email_label: string;
+  city_label: string;
+  state_label: string;
+  format_label: string;
+  capacity_label: string;
+  capacity_placeholder: string;
   consent: string;
   submit_text: string;
   form_footer: string;
@@ -411,4 +442,10 @@ export const siteJson = data;
 export const common = data.common;
 export const template = data.categories.Education.templateComponents['template-1'];
 export const pages = template.pages;
-export const sections = template.sections;
+export const sections = {
+  ...template.sections,
+  header: data.common.Header,
+  footer: data.common.Footer,
+  mobileBar: data.common.MobileBar,
+  backToTop: data.common.BackToTop,
+};

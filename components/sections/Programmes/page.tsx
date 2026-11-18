@@ -4,7 +4,7 @@ import AgeCheck from './AgeCheck';
 
 export default function Programmes({ data }: { data: ProgrammesSectionData }) {
   return (
-    <section id={data.id} className="mx-auto max-w-7xl px-5 py-20 sm:py-28">
+    <section id={data.id} className="mx-auto max-w-7xl px-5 pt-8 pb-10 sm:pt-10 sm:pb-14">
       <p className="eyebrow"><span className="font-display normal-case tracking-normal text-gilt">{data.index}</span> {data.eyebrow}</p>
       <h2 className="font-display mt-4 max-w-3xl text-3xl font-normal leading-[1.08] sm:text-5xl">{data.title}</h2>
       <p className="mt-4 max-w-2xl text-lg text-body">{data.lead}</p>

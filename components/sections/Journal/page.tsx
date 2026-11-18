@@ -3,7 +3,7 @@ import type { JournalSectionData } from '../../types';
 
 export default function Journal({ data }: { data: JournalSectionData }) {
   return (
-    <section id={data.id} className="bg-[#fbf9f6] py-20 sm:py-28">
+    <section id={data.id} className="bg-[#fbf9f6] py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-5">
         <p className="reveal text-[12px] font-bold uppercase tracking-[0.18em] text-brand">
           <span className="font-display font-normal normal-case tracking-normal text-gilt">{data.index}</span>

@@ -6,7 +6,7 @@ import type { FranchiseSectionData } from '../../types';
 
 const icons = { award: Award, case: Briefcase, home: Home, baby: Baby, school: School, landmark: Landmark };
 
-function FormatSelect({ options }: { options: string[] }) {
+function FormatSelect({ options, placeholder }: { options: string[]; placeholder: string }) {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState('');
   const box = useRef<HTMLDivElement>(null);
@@ -23,7 +23,7 @@ function FormatSelect({ options }: { options: string[] }) {
     <div ref={box} className="relative mt-1">
       <input type="text" name="format" value={value} required readOnly className="sr-only" tabIndex={-1} />
       <button type="button" aria-expanded={open} onClick={() => setOpen((current) => !current)} className="flex min-h-12 w-full items-center justify-between rounded-2xl border border-ink/15 bg-white px-4 text-left text-[15px]">
-        <span className={value ? 'font-semibold text-ink' : 'text-body'}>{value || 'Please select'}</span>
+        <span className={value ? 'font-semibold text-ink' : 'text-body'}>{value || placeholder}</span>
         <ChevronDown className={`h-4 w-4 text-brand transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
       {open ? (
@@ -56,7 +56,7 @@ export default function Franchise({ data }: { data: FranchiseSectionData }) {
   const model = data.models.find((item) => item.id === selected) ?? null;
 
   return (
-    <section id={data.id} className="bg-[#fbf6f1] py-20 text-ink sm:py-28">
+    <section id={data.id} className="bg-[#fbf6f1] py-12 text-ink sm:py-16">
       <div className="mx-auto max-w-7xl px-5">
         <p className="reveal inline-flex rounded-full border border-gilt/50 px-4 py-1.5 text-xs font-bold tracking-[0.16em] text-gilt-ink">{data.badge}</p>
         <p className="reveal mt-8 text-[12px] font-bold uppercase tracking-[0.18em] text-brand">
@@ -181,7 +181,7 @@ export default function Franchise({ data }: { data: FranchiseSectionData }) {
           <a href={data.whatsapp_href} target="_blank" rel="noreferrer" className="btn-lift inline-flex min-h-12 items-center gap-2 rounded-full bg-brand px-6 text-sm font-semibold text-white hover:bg-brand-strong">
             <MessageCircle className="h-4 w-4" /> {data.whatsapp_label}
           </a>
-          <a href={data.brochure_href} className="inline-flex min-h-12 items-center gap-2 rounded-full border border-brand/35 bg-paper px-6 text-sm font-semibold text-brand transition-colors hover:bg-brand-tint">
+          <a href={data.brochure_href} download className="inline-flex min-h-12 items-center gap-2 rounded-full border border-brand/35 bg-paper px-6 text-sm font-semibold text-brand transition-colors hover:bg-brand-tint">
             <Download className="h-4 w-4" /> {data.brochure_label}
           </a>
         </div>
@@ -198,19 +198,19 @@ export default function Franchise({ data }: { data: FranchiseSectionData }) {
           <p className="mt-2 text-body">{data.form_lead}</p>
           <p className="mt-2 text-sm text-body">{data.form_note}</p>
           {sent ? (
-            <p className="mt-6 rounded-2xl bg-brand-tint p-4 text-brand">Thank you. Your franchise enquiry is noted.</p>
+            <p className="mt-6 rounded-2xl bg-brand-tint p-4 text-brand">{data.success_message}</p>
           ) : (
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              <label className="text-sm font-semibold">Full name *<input required name="name" className="field mt-1" /></label>
-              <label className="text-sm font-semibold">Contact number *<input required name="phone" className="field mt-1" placeholder="10-digit mobile" /></label>
-              <label className="text-sm font-semibold sm:col-span-2">Email *<input required type="email" name="email" className="field mt-1" /></label>
-              <p className="sm:col-span-2 text-sm font-semibold text-brand">Your proposed school</p>
-              <label className="text-sm font-semibold">City *<input required name="city" className="field mt-1" /></label>
-              <label className="text-sm font-semibold">State *<input required name="state" className="field mt-1" /></label>
-              <label className="text-sm font-semibold sm:col-span-2">Franchise format of interest *
-                <FormatSelect options={data.models.map((item) => item.title)} />
+              <label className="text-sm font-semibold">{data.name_label} *<input required name="name" className="field mt-1" /></label>
+              <label className="text-sm font-semibold">{data.phone_label} *<input required name="phone" className="field mt-1" placeholder={data.phone_placeholder} /></label>
+              <label className="text-sm font-semibold sm:col-span-2">{data.email_label} *<input required type="email" name="email" className="field mt-1" /></label>
+              <p className="sm:col-span-2 text-sm font-semibold text-brand">{data.school_group}</p>
+              <label className="text-sm font-semibold">{data.city_label} *<input required name="city" className="field mt-1" /></label>
+              <label className="text-sm font-semibold">{data.state_label} *<input required name="state" className="field mt-1" /></label>
+              <label className="text-sm font-semibold sm:col-span-2">{data.format_label} *
+                <FormatSelect options={data.models.map((item) => item.title)} placeholder={data.select_placeholder} />
               </label>
-              <label className="text-sm font-semibold sm:col-span-2">Approximate investment capacity (optional)<input name="capacity" className="field mt-1" placeholder="A range, or Not yet decided" /></label>
+              <label className="text-sm font-semibold sm:col-span-2">{data.capacity_label}<input name="capacity" className="field mt-1" placeholder={data.capacity_placeholder} /></label>
               <label className="flex items-start gap-2 text-sm sm:col-span-2"><input required type="checkbox" className="mt-1" /> {data.consent}</label>
               <p className="text-sm text-body sm:col-span-2">{data.form_footer}</p>
               <button type="submit" className="btn-lift min-h-12 w-fit rounded-full bg-ink px-6 text-sm font-semibold text-paper hover:bg-brand">{data.submit_text}</button>

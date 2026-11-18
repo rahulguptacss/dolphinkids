@@ -27,7 +27,7 @@ function ProgrammeSelect({ item }: { item: EnquireField }) {
         onClick={() => setOpen((current) => !current)}
         className="flex min-h-12 w-full items-center justify-between rounded-2xl border border-ink/15 bg-white px-4 text-left text-[15px] shadow-sm"
       >
-        <span className={value ? 'font-semibold text-ink' : 'text-body'}>{value || 'Choose a programme'}</span>
+        <span className={value ? 'font-semibold text-ink' : 'text-body'}>{value || item.placeholder}</span>
         <ChevronDown className={`h-4 w-4 text-brand transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
       {open && (
@@ -77,7 +77,7 @@ export default function Enquire({ data }: { data: EnquireSectionData }) {
   };
 
   return (
-    <section className="px-5 py-20 sm:py-28">
+    <section className="px-5 py-12 sm:py-16">
       <div className="mx-auto grid max-w-7xl overflow-hidden rounded-[2rem] bg-paper ring-1 ring-ink/10 lg:grid-cols-[1.2fr_1fr]">
         <div className="p-8 sm:p-14">
           <p className="eyebrow">

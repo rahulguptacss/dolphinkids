@@ -11,7 +11,7 @@ const icons: Record<string, LucideIcon> = {
 
 export default function About({ data }: { data: AboutSectionData }) {
   return (
-    <section id={data.id} className="mx-auto max-w-7xl px-5 py-20 sm:py-28">
+    <section id={data.id} className="mx-auto max-w-7xl px-5 pt-20 pb-8 sm:pt-28 sm:pb-10">
       <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <p className="eyebrow"><span className="font-display normal-case tracking-normal text-gilt">{data.index}</span> {data.eyebrow}</p>
@@ -29,7 +29,7 @@ export default function About({ data }: { data: AboutSectionData }) {
           </figcaption>
         </figure>
       </div>
-      <ul className="mt-16 grid gap-x-10 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="mt-10 grid gap-x-10 sm:grid-cols-2 lg:grid-cols-3">
         {data.pillars.map((pillar) => {
           const Icon = icons[pillar.icon] ?? Compass;
           return (

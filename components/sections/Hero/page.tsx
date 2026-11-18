@@ -78,7 +78,7 @@ export default function Hero({ data }: { data: HeroSectionData }) {
           </div>
           <div className="mt-3 flex flex-wrap items-center gap-x-5 text-sm">
             <a href={data.phone_href} className="inline-flex min-h-11 items-center gap-2 font-bold text-ink">
-              <Phone className="h-4 w-4 text-brand" /> Call {data.phone}
+              <Phone className="h-4 w-4 text-brand" /> {data.call_label} {data.phone}
             </a>
             <a href={data.whatsapp_href} className="inline-flex min-h-11 items-center gap-2 font-semibold text-brand underline decoration-gilt/60 underline-offset-4">
               <MessageCircle className="h-4 w-4" /> {data.whatsapp_text}

@@ -38,6 +38,10 @@
 
 html { scroll-behavior: smooth; }
 
+.journal-prose { color: var(--body); font-size: 1.075rem; line-height: 1.8; }
+.journal-prose p { margin: 0 0 1.15rem; }
+.dropcap > p:first-of-type::first-letter { font-family: var(--font-fraunces), serif; float: left; font-size: 3.6rem; line-height: .85; padding: .35rem .6rem 0 0; color: var(--brand); }
+
 body {
   background: var(--paper);
   color: var(--ink);
@@ -132,14 +136,20 @@ h1 em,
   transform: none;
 }
 
+a.bg-brand,
+button.bg-brand,
 .btn-lift {
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
+a.bg-brand:hover,
+button.bg-brand:hover,
 .btn-lift:hover {
   transform: translateY(-1px);
 }
 
+a.bg-brand:active,
+button.bg-brand:active,
 .btn-lift:active {
   transform: translateY(0);
 }
@@ -155,7 +165,7 @@ h1 em,
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1 !important; transform: none !important; }
-  .btn-lift:hover { transform: none; }
+  a.bg-brand:hover, button.bg-brand:hover, .btn-lift:hover { transform: none; }
 }
 
 .field {

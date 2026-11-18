@@ -8,7 +8,7 @@ export default function Tour({ data }: { data: TourSectionData }) {
   const [started, setStarted] = useState(false);
 
   return (
-    <section id={data.id} className="bg-brand-tint py-20 sm:py-28">
+    <section id={data.id} className="bg-brand-tint py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-5">
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <div>

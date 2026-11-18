@@ -19,7 +19,7 @@ const facilityIcons = {
 
 export default function Why({ data }: { data: WhySectionData }) {
   return (
-    <section id={data.id} className="bg-ivory py-16 sm:py-24">
+    <section id={data.id} className="bg-ivory py-10 sm:py-14">
       <div className="mx-auto grid max-w-7xl items-start gap-14 px-5 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="lg:sticky lg:top-32 lg:self-start">
           <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-gilt">

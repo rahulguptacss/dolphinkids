@@ -59,9 +59,9 @@ export default function AgeCheck({ data }: { data: ProgrammesSectionData }) {
         <div className="rounded-xl border border-ink/10 bg-white/70 p-5 text-sm text-body" aria-live="polite">
           {months !== null && months >= 0 ? (
             <p>
-              Age {pre ? 'today' : `on ${check.cutoff_label}`}: <strong className="text-ink">{Math.floor(months / 12)} years {months % 12} months</strong>
-              {match ? <span className="mt-2 block font-display text-2xl text-ink">{match.name}</span> : <span className="mt-2 block">Please speak with admissions. This age is below the published minimum.</span>}
-              <span className="mt-2 block text-xs">Indicative only. The admissions team confirms the class.</span>
+              {pre ? check.age_today : `${check.age_on} ${check.cutoff_label}`}: <strong className="text-ink">{Math.floor(months / 12)} {check.years_label} {months % 12} {check.months_label}</strong>
+              {match ? <span className="mt-2 block font-display text-2xl text-ink">{match.name}</span> : <span className="mt-2 block">{check.below_text}</span>}
+              <span className="mt-2 block text-xs">{check.indicative}</span>
             </p>
           ) : (
             <p>

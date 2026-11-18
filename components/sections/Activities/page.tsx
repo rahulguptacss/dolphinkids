@@ -14,7 +14,7 @@ const icons = {
 
 export default function Activities({ data }: { data: ActivitiesSectionData }) {
   return (
-    <section id={data.id} className="mx-auto grid max-w-7xl items-center gap-14 px-5 py-20 sm:py-28 lg:grid-cols-2">
+    <section id={data.id} className="mx-auto grid max-w-7xl items-center gap-14 px-5 py-12 sm:py-16 lg:grid-cols-2">
       <div>
         <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-brand">
           <span className="font-display font-normal normal-case tracking-normal text-gilt">{data.index}</span>

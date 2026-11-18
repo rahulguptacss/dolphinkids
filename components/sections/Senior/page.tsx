@@ -11,7 +11,7 @@ const icons = {
 
 export default function Senior({ data }: { data: SeniorSectionData }) {
   return (
-    <section id={data.id} className="bg-brand-tint py-20 sm:py-28">
+    <section id={data.id} className="bg-brand-tint py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-5">
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>

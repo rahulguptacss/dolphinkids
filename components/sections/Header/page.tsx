@@ -7,6 +7,8 @@ import type { HeaderData, NavItem } from '../../types';
 export default function Header({ data }: { data: HeaderData }) {
   const [open, setOpen] = useState<number | null>(null);
   const [mobile, setMobile] = useState(false);
+  const [drawer, setDrawer] = useState(false);
+  const [section, setSection] = useState<string | null>(null);
   const [note, setNote] = useState<NavItem | null>(null);
   const [login, setLogin] = useState(false);
   const navRef = useRef<HTMLElement>(null);
@@ -27,9 +29,23 @@ export default function Header({ data }: { data: HeaderData }) {
     };
   }, []);
 
+  const openMenu = () => {
+    setMobile(true);
+    requestAnimationFrame(() => requestAnimationFrame(() => setDrawer(true)));
+  };
+  const closeMenu = () => {
+    setDrawer(false);
+    window.setTimeout(() => setMobile(false), 320);
+  };
+
+  useEffect(() => {
+    document.body.style.overflow = mobile ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [mobile]);
+
   const act = (item: NavItem) => {
     setOpen(null);
-    setMobile(false);
+    closeMenu();
     if (item.note) setNote(item);
   };
 
@@ -40,7 +56,7 @@ export default function Header({ data }: { data: HeaderData }) {
       <a key={`${item.name}-${index}`} href={item.href} onClick={() => act(item)} className={itemClass}>{item.name}</a>
     ) : (
       <button key={`${item.name}-${index}`} type="button" onClick={() => act(item)} className={`${itemClass} text-left`}>
-        {item.name} <span className="ml-1 text-xs text-gilt-ink">Coming soon</span>
+        {item.name} <span className="ml-1 text-xs text-gilt-ink">{data.coming_soon}</span>
       </button>
     );
 
@@ -100,7 +116,7 @@ export default function Header({ data }: { data: HeaderData }) {
                           <p className="font-display text-2xl text-ink">{group.name}</p>
                           <p className="mt-2 text-sm font-normal tracking-normal text-body">{group.blurb}</p>
                           <a href={group.href} onClick={() => setOpen(null)} className="mt-5 inline-flex items-center gap-1 text-sm font-semibold tracking-normal text-brand">
-                            Overview <ArrowUpRight className="h-4 w-4" />
+                            {data.overview_label} <ArrowUpRight className="h-4 w-4" />
                           </a>
                         </div>
                         <div className="grid min-w-0 grid-cols-2 content-start gap-x-4 gap-y-1">
@@ -114,58 +130,62 @@ export default function Header({ data }: { data: HeaderData }) {
             </ul>
           </nav>
           <div className="flex items-center gap-2">
-            <a href={data.button_href} className="hidden min-h-11 shrink-0 items-center whitespace-nowrap rounded-full bg-brand px-5 text-sm font-semibold text-paper hover:bg-brand-strong md:inline-flex">{data.button_text}</a>
-            <button type="button" className="grid h-12 w-12 place-items-center rounded-full border border-ink/15 bg-paper xl:hidden" aria-label="Open menu" onClick={() => setMobile(true)}>
+            <a href={data.button_href} suppressHydrationWarning className="hidden min-h-11 shrink-0 items-center whitespace-nowrap rounded-full bg-brand px-5 text-sm font-semibold text-paper hover:bg-brand-strong md:inline-flex">{data.button_text}</a>
+            <button type="button" className="grid h-12 w-12 place-items-center rounded-full border border-ink/15 bg-paper xl:hidden" aria-label={data.open_menu} onClick={openMenu}>
               <Menu className="h-5 w-5" />
             </button>
           </div>
         </div>
         <div className="border-t border-brand/10 bg-brand-tint">
           <nav className="mx-auto flex max-w-7xl items-center gap-2 px-3 py-2 sm:justify-center sm:gap-4 sm:px-5">
-            <a href={data.franchise_brochure} className="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-xl px-2 font-sans text-sm font-semibold text-ink hover:text-brand sm:px-3">
+            <a href={data.promo_href} className="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-xl px-2 font-sans text-sm font-semibold text-ink hover:text-brand sm:px-3">
               <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-ink text-paper"><Play className="ml-0.5 h-3.5 w-3.5" fill="currentColor" /></span>
               <span className="hidden whitespace-nowrap font-sans text-sm font-semibold md:inline">{data.promo_text}</span>
             </a>
-            <a href={data.admission_brochure} className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand px-4 text-xs font-bold text-paper sm:px-6 sm:text-sm">
+            <a href={data.admission_brochure} download suppressHydrationWarning className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand px-4 text-xs font-bold text-paper sm:px-6 sm:text-sm">
               <Download className="h-4 w-4" />{data.admission_brochure_text}
             </a>
-            <a href={data.franchise_brochure} className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-brand/25 bg-paper px-4 text-xs font-bold text-brand sm:px-6 sm:text-sm">
+            <a href={data.franchise_brochure} download className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-brand/25 bg-paper px-4 text-xs font-bold text-brand sm:px-6 sm:text-sm">
               <Download className="h-4 w-4" />{data.franchise_brochure_text}
             </a>
           </nav>
         </div>
       </header>
       {mobile && (
-        <div className="fixed inset-0 z-[70] bg-ink/45 xl:hidden" onClick={() => setMobile(false)}>
-          <div className="ml-auto flex h-full w-full max-w-md flex-col bg-paper text-ink" onClick={(event) => event.stopPropagation()}>
+        <div className={`fixed inset-0 z-[70] bg-ink/45 transition-opacity duration-300 xl:hidden ${drawer ? 'opacity-100' : 'opacity-0'}`} onClick={closeMenu}>
+          <div className={`ml-auto flex h-full w-full max-w-md flex-col bg-paper text-ink shadow-2xl transition-transform duration-300 ease-out ${drawer ? 'translate-x-0' : 'translate-x-full'}`} onClick={(event) => event.stopPropagation()}>
             <div className="flex items-center justify-between border-b border-ink/10 px-5 py-3">
-              <p className="font-display text-xl">Menu</p>
-              <button type="button" className="grid h-12 w-12 place-items-center rounded-full" aria-label="Close menu" onClick={() => setMobile(false)}><X className="h-5 w-5" /></button>
+              <p className="font-display text-xl">{data.menu_label}</p>
+              <button type="button" className="grid h-12 w-12 place-items-center rounded-full hover:bg-brand-tint" aria-label={data.close_menu} onClick={closeMenu}><X className="h-5 w-5" /></button>
             </div>
             <nav className="min-h-0 flex-1 overflow-y-auto px-5 py-3">
               {data.nav.map((group) => group.items.length === 0 ? (
-                <a key={group.name} href={group.href} onClick={() => setMobile(false)} className="block border-b border-ink/10 py-4 text-lg font-semibold">{group.name}</a>
+                <a key={group.name} href={group.href} onClick={closeMenu} className="block border-b border-ink/10 py-4 text-lg font-semibold">{group.name}</a>
               ) : (
-                <details key={group.name} className="group border-b border-ink/10">
-                  <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between py-3 text-lg font-semibold">
+                <div key={group.name} className="border-b border-ink/10">
+                  <button type="button" aria-expanded={section === group.name} onClick={() => setSection(section === group.name ? null : group.name)} className="flex min-h-14 w-full items-center justify-between py-3 text-left text-lg font-semibold">
                     {group.name}
-                    <ChevronDown className="h-5 w-5 transition-transform group-open:rotate-180" />
-                  </summary>
-                  <div className="grid pb-3">
-                    {group.items.map((item, index) => (
-                      item.href ? (
-                        <a key={`${item.name}-${index}`} href={item.href} onClick={() => setMobile(false)} className="rounded-lg py-3 pl-3 text-base">{item.name}</a>
-                      ) : (
-                        <button key={`${item.name}-${index}`} type="button" onClick={() => act(item)} className="rounded-lg py-3 pl-3 text-left text-base">{item.name} <span className="text-xs text-gilt-ink">Coming soon</span></button>
-                      )
-                    ))}
+                    <ChevronDown className={`h-5 w-5 transition-transform duration-300 ${section === group.name ? 'rotate-180' : ''}`} />
+                  </button>
+                  <div className={`grid transition-[grid-template-rows] duration-300 ease-out ${section === group.name ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
+                    <div className="overflow-hidden">
+                      <div className="grid pb-3">
+                        {group.items.map((item, index) => (
+                          item.href ? (
+                            <a key={`${item.name}-${index}`} href={item.href} onClick={closeMenu} className="rounded-lg py-3 pl-3 text-base hover:bg-brand-tint hover:text-brand">{item.name}</a>
+                          ) : (
+                            <button key={`${item.name}-${index}`} type="button" onClick={() => act(item)} className="rounded-lg py-3 pl-3 text-left text-base hover:bg-brand-tint">{item.name} <span className="text-xs text-gilt-ink">{data.coming_soon}</span></button>
+                          )
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               ))}
             </nav>
             <div className="grid gap-2 border-t border-ink/10 p-4">
-              <a href={data.phone_href} className="flex min-h-12 items-center justify-center gap-2 rounded-full bg-ink font-semibold text-paper"><Phone className="h-4 w-4" /> Call {data.phone}</a>
-              <a href={data.button_href} onClick={() => setMobile(false)} className="flex min-h-12 items-center justify-center rounded-full bg-brand font-semibold text-paper">{data.button_text}</a>
+              <a href={data.phone_href} className="flex min-h-12 items-center justify-center gap-2 rounded-full bg-ink font-semibold text-paper"><Phone className="h-4 w-4" /> {data.call_label} {data.phone}</a>
+              <a href={data.button_href} onClick={closeMenu} className="flex min-h-12 items-center justify-center rounded-full bg-brand font-semibold text-paper">{data.button_text}</a>
             </div>
           </div>
         </div>
@@ -173,20 +193,20 @@ export default function Header({ data }: { data: HeaderData }) {
       {note && (
         <div className="fixed inset-0 z-[80] grid place-items-center bg-ink/40 p-5" onClick={() => setNote(null)}>
           <div className="max-w-md rounded-2xl bg-paper p-6 text-ink" onClick={(event) => event.stopPropagation()}>
-            <p className="eyebrow">Coming in the next phase</p>
+            <p className="eyebrow">{data.phase_title}</p>
             <h3 className="font-display mt-3 text-2xl">{note.name}</h3>
             <p className="mt-3 text-body">{note.note}</p>
-            <button type="button" className="mt-5 rounded-full bg-brand px-5 py-2 text-sm font-semibold text-paper" onClick={() => setNote(null)}>Close</button>
+            <button type="button" className="mt-5 rounded-full bg-brand px-5 py-2 text-sm font-semibold text-paper" onClick={() => setNote(null)}>{data.close_label}</button>
           </div>
         </div>
       )}
       {login && (
         <div className="fixed inset-0 z-[80] grid place-items-center bg-ink/40 p-5" onClick={() => setLogin(false)}>
           <div className="max-w-md rounded-2xl bg-paper p-6 text-ink" onClick={(event) => event.stopPropagation()}>
-            <p className="eyebrow">Parent Login</p>
-            <h3 className="font-display mt-3 text-2xl">Parent portal not yet available</h3>
-            <p className="mt-3 text-body">The parent portal link has not been supplied by the school yet. For anything you need today, please call admissions on {data.phone}.</p>
-            <button type="button" className="mt-5 rounded-full bg-brand px-5 py-2 text-sm font-semibold text-paper" onClick={() => setLogin(false)}>Close</button>
+            <p className="eyebrow">{data.login_text}</p>
+            <h3 className="font-display mt-3 text-2xl">{data.login_title}</h3>
+            <p className="mt-3 text-body">{data.login_body}</p>
+            <button type="button" className="mt-5 rounded-full bg-brand px-5 py-2 text-sm font-semibold text-paper" onClick={() => setLogin(false)}>{data.close_label}</button>
           </div>
         </div>
       )}

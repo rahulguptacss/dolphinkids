@@ -5,11 +5,9 @@ const icons = { fees: Wallet, timings: Clock, transport: Bus };
 
 export default function ParentInfo({ data }: { data: ParentInfoSectionData }) {
   return (
-    <section id={data.id} className="bg-ivory py-16 sm:py-24">
+    <section id={data.id} className="bg-ivory py-10 sm:py-14">
       <div className="mx-auto max-w-6xl px-5">
-        <span className="inline-block rounded bg-deep px-2 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-ink">
-          {data.eyebrow}
-        </span>
+        <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-brand">{data.eyebrow}</p>
         <h2 className="font-display mt-4 max-w-xl text-3xl font-normal leading-[1.08] text-ink sm:text-5xl">{data.title}</h2>
         <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-body">{data.lead}</p>
         <ul className="mt-10 grid gap-5 md:grid-cols-3">

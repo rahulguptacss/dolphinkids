@@ -68,7 +68,7 @@ export default function Learning({ data }: { data: LearningSectionData }) {
   }, []);
 
   return (
-    <section id={data.id} className="relative overflow-hidden bg-sage py-20 text-ink sm:py-28">
+    <section id={data.id} className="relative overflow-hidden bg-sage py-12 text-ink sm:py-16">
       <div className="pointer-events-none absolute -right-40 -top-40 h-[520px] w-[520px] rounded-full border border-gilt/20" aria-hidden />
       <div className="relative mx-auto max-w-7xl px-5">
         <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-brand">
